@@ -68,7 +68,7 @@ export default {
       for(let i = 0; i<dependencyList.length; i++){
         result = this.checkDependency(dependencyList[i])
         if(result===false){return false}
-        else
+        else continue
       }
       return result
     },
