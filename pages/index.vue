@@ -1,16 +1,36 @@
 <template>
   <div>
+    <h1>Ilmu Komputer</h1>
+    <div>
+      <v-container>
+        <v-row dense>
+          <v-col cols='4'>
+            <v-card color='#1e1e1e' min-height='100%' align='center'>Belum bisa diambil</v-card>
+          </v-col>
+          <v-col cols='4'>
+            <v-card color='#006400' min-height='100%' align='center'>Sudah diambil</v-card>
+          </v-col>
+          <v-col cols='4'>
+            <v-card color='#F96b00' min-height='100%' align='center'>Bisa diambil</v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
     <v-container v-for='semester in data1' :key='semester'>
-      <h4>{{ semester.name }}</h4>
+      <h2>{{ semester.name }}</h2>
       <v-row dense>
         <v-col
           v-for='matkul in semester.matkuls'
+          cols='12'
+          sm='6'
+          md='4'
+          lg='3'
           :key='matkul'
           max-width='50%'
         >
           <v-card
             @click='matkul.selected = !matkul.selected'
-            :color="matkul.selected==true ? '#006400' : dependencyDriver(matkul.dependency)===true ? '#F96b00': '#1e1e1e'"
+            :color="matkul.selected==true ? '#006400' : matkul.selectable || dependencyDriver(matkul.dependency)===true ? '#F96b00': '#1e1e1e'"
             height='100%'
             min-height='300px'
           >
@@ -36,6 +56,11 @@ export default {
   },
   methods: {
     dependencyDriver(dependencyList){
+      console.log("checking!")
+      if(dependencyList===[]){
+        console.log("empty dependency!")
+        return true
+      }
       let result = false
       for(let i = 0; i<dependencyList.length; i++){
         result = this.checkDependency(dependencyList[i])
