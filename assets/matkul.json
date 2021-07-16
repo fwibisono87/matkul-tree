@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Semester 1",
+    "matkuls": [
+      {
+        "stitle": "MPKT-A",
+        "ltitle": "Mata Kuliah Pengembangan Kepribadian Terintegrasi - A",
+        "description": "PPKn but more retarded",
+        "dependency": [],
+        "selected": false,
+        "selectable": true
+      },
+      {
+        "stitle": "MPKT-B",
+        "ltitle": "Mata Kuliah Pengembangan Kepribadian Terintegrasi - B",
+        "description": "PPKn but more retarded, with t e c h n o l o g y",
+        "dependency": [],
+        "selected": false,
+        "selectable": false
+      },
+      {
+        "stitle": "MatDas 1",
+        "ltitle": "Matematika Dasar 1",
+        "description": "calculus lol",
+        "dependency": [],
+        "selected": false,
+        "selectable": false
+      },
+      {
+        "stitle": "MatDas 2",
+        "ltitle": "Matematika Dasar 2",
+        "description": "calculus lol",
+        "dependency": ["MatDas 1"],
+        "selected": false,
+        "selectable": false
+      }
+    ]
+  }
+]
