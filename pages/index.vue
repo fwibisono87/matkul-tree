@@ -5,12 +5,15 @@
       <v-container>
         <v-row dense>
           <v-col cols='4'>
+            <!--suppress HtmlDeprecatedAttribute -->
             <v-card color='#1e1e1e' min-height='100%' align='center'>Belum bisa diambil</v-card>
           </v-col>
           <v-col cols='4'>
+            <!--suppress HtmlDeprecatedAttribute -->
             <v-card color='#006400' min-height='100%' align='center'>Sudah diambil</v-card>
           </v-col>
           <v-col cols='4'>
+            <!--suppress HtmlDeprecatedAttribute -->
             <v-card color='#F96b00' min-height='100%' align='center'>Bisa diambil</v-card>
           </v-col>
         </v-row>
@@ -21,18 +24,18 @@
       <v-row dense>
         <v-col
           v-for='matkul in semester.matkuls'
+          :key='matkul'
           cols='12'
           sm='6'
           md='4'
           lg='3'
-          :key='matkul'
           max-width='50%'
         >
           <v-card
-            @click='matkul.selected = !matkul.selected'
             :color="matkul.selected==true ? '#006400' : matkul.selectable || dependencyDriver(matkul.dependency)===true ? '#F96b00': '#1e1e1e'"
             height='100%'
             min-height='300px'
+            @click='matkul.selected = !matkul.selected'
           >
             <v-card-title>{{matkul.stitle}}</v-card-title>
             <v-card-subtitle>{{matkul.ltitle}}</v-card-subtitle>
@@ -50,33 +53,33 @@ export default {
   data: () => ({
     data1: [],
   }),
-  async mounted() {
+  mounted() {
     this.data1 = JSON.parse(JSON.stringify(require('~/assets/matkul.json')))
-    await console.log(this.dependencyDriver(['MatDas 1', 'MatDas 2']))
+    // await console.log(this.dependencyDriver(['MatDas 1', 'MatDas 2']))
   },
   methods: {
     dependencyDriver(dependencyList){
-      console.log("checking!")
+      // console.log("checking!")
       if(dependencyList===[]){
-        console.log("empty dependency!")
+        // console.log("empty dependency!")
         return true
       }
       let result = false
       for(let i = 0; i<dependencyList.length; i++){
         result = this.checkDependency(dependencyList[i])
         if(result===false){return false}
-        else continue
+        else
       }
       return result
     },
     checkDependency(value) {
       const list = this.data1
-      console.log(list)
+      // console.log(list)
       for(let SemesterCount = 0; SemesterCount<list.length; SemesterCount++){
-        console.log(list[SemesterCount])
+        // console.log(list[SemesterCount])
         const thisSemester = list[SemesterCount]
         const thisSemesterMatkuls = thisSemester.matkuls
-        console.log(thisSemesterMatkuls)
+        // console.log(thisSemesterMatkuls)
         for (let MatkulCount = 0; MatkulCount<thisSemesterMatkuls.length; MatkulCount++){
           if(thisSemesterMatkuls[MatkulCount].stitle === value){
             if(thisSemesterMatkuls[MatkulCount].selected){
