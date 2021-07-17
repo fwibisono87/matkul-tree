@@ -15,12 +15,43 @@
           <span class='mx-auto'>Loading!</span>
         </v-row>
       </v-overlay>
-      <v-app-bar dense>
-        Pacil Matkul Tree <span style='color: orange; font-weight: bold'> -BETA- </span> Ilmu Komputer Wajib
+      <v-app-bar dense fixed>
+        <v-app-bar-nav-icon @click.stop='drawer = !drawer'></v-app-bar-nav-icon>
+        <v-toolbar-title>
+          Pacil Matkul Tree <span style='color: orange; font-weight: bold'> -BETA- </span>
+        </v-toolbar-title>
       </v-app-bar>
-      <v-container min-height='100%'>
+      <v-container class='mt-12'>
         <nuxt />
       </v-container>
+      <v-navigation-drawer
+        v-model='drawer'
+        fixed
+      >
+        <v-list class='px-2 pt-2'>
+          <v-list-item-title style='font-size: 125%'>Pacil Matkul Tree <span style='color: orange; font-weight: bold'> -BETA- </span></v-list-item-title>
+        </v-list>
+        <v-list nav dense>
+          <v-list-item-group>
+            <v-list-item to='/'>
+              <v-list-item-icon><v-icon>mdi-home</v-icon></v-list-item-icon>
+              <v-list-item-title>Home</v-list-item-title>
+            </v-list-item>
+            <v-list-item to='/about'>
+              <v-list-item-icon><v-icon>mdi-information</v-icon></v-list-item-icon>
+              <v-list-item-title>About</v-list-item-title>
+            </v-list-item>
+            <v-list-item to='/ilkom'>
+              <v-list-item-icon><v-icon>mdi-desktop-classic</v-icon></v-list-item-icon>
+              <v-list-item-title>Ilmu Komputer</v-list-item-title>
+            </v-list-item>
+            <v-list-item to='/si'>
+              <v-list-item-icon><v-icon>mdi-clipboard-text-search-outline</v-icon></v-list-item-icon>
+              <v-list-item-title>Sistem Informasi</v-list-item-title>
+            </v-list-item>
+          </v-list-item-group>
+        </v-list>
+      </v-navigation-drawer>
       <v-btn
         fab
         dark
@@ -31,23 +62,6 @@
       >
         <v-icon>mdi-arrow-up</v-icon>
       </v-btn>
-      <v-snackbar
-        :value='true'
-        :multi-line="multiLine"
-        :timeout='10000'
-      >
-        Halo! Situs ini masih dalam perkembangan!<br /> Saat ini, baru MK Wajib Ilkom Terimplementasi!<br />Mohon berikan feedback ke francis.wibisono@ui.ac.id
-        <template v-slot:action='{ attrs }'>
-          <v-btn
-            color="orange"
-            text
-            v-bind="attrs"
-            @click="snackbar = false"
-          >
-            Close
-          </v-btn>
-        </template>
-      </v-snackbar>
     </v-main>
   </v-app>
 </template>
@@ -56,7 +70,8 @@
 export default {
   name: 'default',
   data: () => ({
-    loader: true
+    loader: true,
+    drawer: false
   }),
   created() {
     // console.log("created")

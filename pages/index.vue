@@ -1,106 +1,29 @@
 <template>
-  <div>
-    <h1>Ilmu Komputer</h1>
-    <div>
-      <v-container>
-        <v-row dense>
-          <v-col cols='4'>
-            <!--suppress HtmlDeprecatedAttribute -->
-            <v-card color='#1e1e1e' min-height='100%' align='center'>Belum bisa diambil</v-card>
-          </v-col>
-          <v-col cols='4'>
-            <!--suppress HtmlDeprecatedAttribute -->
-            <v-card color='#006400' min-height='100%' align='center'>Sudah diambil</v-card>
-          </v-col>
-          <v-col cols='4'>
-            <!--suppress HtmlDeprecatedAttribute -->
-            <v-card color='#F96b00' min-height='100%' align='center'>Bisa diambil</v-card>
-          </v-col>
-        </v-row>
-      </v-container>
-    </div>
-    <v-container v-for='semester in data1' :key='semester'>
-      <h2>{{ semester.name }}</h2>
-      <v-row dense>
-        <v-col
-          v-for='matkul in semester.matkuls'
-          :key='matkul'
-          cols='12'
-          sm='6'
-          md='4'
-          lg='3'
-          max-width='50%'
-        >
-          <v-card
-            v-if='matkul.selectable || dependencyDriver(matkul.dependency)===true'
-            :color="matkul.selected==true ? '#006400' : matkul.selectable || dependencyDriver(matkul.dependency)===true ? '#F96b00': '#1e1e1e'"
-            height='100%'
-            min-height='300px'
-            @click='matkul.selected = !matkul.selected'
-          >
-            <v-card-title>{{matkul.stitle}}</v-card-title>
-            <v-card-subtitle>{{matkul.ltitle}}</v-card-subtitle>
-            <v-card-text>{{matkul.description}}</v-card-text>
-          </v-card>
-          <v-card
-            v-else
-            height='100%'
-            min-height='300px'
-          >
-            <v-card-title>{{matkul.stitle}}</v-card-title>
-            <v-card-subtitle>{{matkul.ltitle}}</v-card-subtitle>
-            <v-card-text>{{matkul.description}}</v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-container>
-  </div>
+  <v-container>
+    <span>Halo! Selamat datang di Pacil Matkul Tree!</span>
+    <v-row>
+      <v-col><v-card color='#00008B'>
+        <v-list-item to='/ilkom'>
+        <v-list-item-icon><v-icon>mdi-desktop-classic</v-icon></v-list-item-icon>
+        <v-list-item-title>Ilmu Komputer</v-list-item-title>
+        </v-list-item>
+      </v-card></v-col>
+      <v-col>
+        <v-card color='#8B0000'>
+        <v-list-item>
+          <v-list-item-icon><v-icon>mdi-clipboard-text-search-outline</v-icon></v-list-item-icon>
+          <v-list-item-title>Sistem Informasi (Unimplemented)</v-list-item-title>
+        </v-list-item>
+      </v-card></v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
 export default {
-  name: 'index',
   data: () => ({
-    data1: [],
+    name: "Home"
   }),
-  mounted() {
-    this.data1 = JSON.parse(JSON.stringify(require('~/assets/matkul.json')))
-    // await console.log(this.dependencyDriver(['MatDas 1', 'MatDas 2']))
-  },
-  methods: {
-    dependencyDriver(dependencyList){
-      // console.log("checking!")
-      if(dependencyList===[]){
-        // console.log("empty dependency!")
-        return true
-      }
-      let result = false
-      for(let i = 0; i<dependencyList.length; i++){
-        result = this.checkDependency(dependencyList[i])
-        if(result===false){return false}
-        else continue
-      }
-      return result
-    },
-    checkDependency(value) {
-      const list = this.data1
-      // console.log(list)
-      for(let SemesterCount = 0; SemesterCount<list.length; SemesterCount++){
-        // console.log(list[SemesterCount])
-        const thisSemester = list[SemesterCount]
-        const thisSemesterMatkuls = thisSemester.matkuls
-        // console.log(thisSemesterMatkuls)
-        for (let MatkulCount = 0; MatkulCount<thisSemesterMatkuls.length; MatkulCount++){
-          if(thisSemesterMatkuls[MatkulCount].stitle === value){
-            if(thisSemesterMatkuls[MatkulCount].selected){
-              return true
-            }
-            else return false
-          }
-        }
-      }
-    }
-  }
 }
 </script>
 
