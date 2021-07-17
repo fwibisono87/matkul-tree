@@ -27,6 +27,7 @@
       <v-navigation-drawer
         v-model='drawer'
         fixed
+        temporary
       >
         <v-list class='px-2 pt-2'>
           <v-list-item-title style='font-size: 125%'>Pacil Matkul Tree <span style='color: orange; font-weight: bold'> -BETA- </span></v-list-item-title>
