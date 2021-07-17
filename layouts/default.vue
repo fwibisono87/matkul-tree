@@ -59,10 +59,10 @@ export default {
     loader: true
   }),
   created() {
-    console.log("created")
+    // console.log("created")
   },
   mounted(){
-    console.log("mounted")
+    // console.log("mounted")
     this.loader = false
   },
   methods: {
