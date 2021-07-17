@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>Ilmu Komputer</h1>
+    <h1>Sistem Informasi</h1>
+    <h2>Partially Implemeted!</h2>
     <div>
       <v-container>
         <v-row dense>
@@ -64,7 +65,7 @@ export default {
     data1: [],
   }),
   mounted() {
-    this.data1 = JSON.parse(JSON.stringify(require('assets/ilkom.json')))
+    this.data1 = JSON.parse(JSON.stringify(require('assets/si.json')))
     // await console.log(this.dependencyDriver(['MatDas 1', 'MatDas 2']))
   },
   methods: {

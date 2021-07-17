@@ -1,0 +1,55 @@
+[
+  {
+    "name": "Semester 1",
+    "matkuls": [
+      {
+        "stitle": "Agama",
+        "ltitle": "MPK Agama",
+        "description": "Mata Kuliah Agama",
+        "dependency": [],
+        "selected": false,
+        "selectable": true
+      },
+      {
+        "stitle": "Kalkulus 1",
+        "ltitle": "Kalkulus 1",
+        "description": "Matemaka Dasar 1 merupakan mata ajaran wajib di Fasilkom dengan materi utama Kalkulus Dasar.",
+        "dependency": [],
+        "selected": false,
+        "selectable": true
+      },
+      {
+        "stitle": "Inggris",
+        "ltitle": "MPK Bahasa Inggris",
+        "description": "Mata Pelajaran Bahasa Inggris",
+        "dependency": [],
+        "selected": false,
+        "selectable": true
+      },
+      {
+        "stitle": "MPKO/S",
+        "ltitle": "MPK Olahraga/Seni",
+        "description": "Mata kuliah yang bisa dipilih!",
+        "dependency": [],
+        "selected": false,
+        "selectable": true
+      },
+      {
+        "stitle": "MD-1",
+        "ltitle": "Matematika Diskret 1",
+        "description": "Mata ajar ini berisi subyek Matemaka Diskret\nyang memuat fondasi teoris untuk mendukung\nstudi lanjutan di bidang ilmu komputer, dan\nmemuat aplikasi matemaka diskret di bidang\nilmu komputer\n",
+        "dependency": [],
+        "selected": false,
+        "selectable": true
+      },
+      {
+        "stitle": "DDP-1",
+        "ltitle": "Dasar Dasar Pemrograman 1",
+        "description": "Mata kuliah ini bertujuan untuk mengajarkan\nkonsep-konsep dasar serta teknik untuk membuat\nprogram komputer menggunakan Bahasa\nPemrograman Phyton.",
+        "dependency": [],
+        "selected": false,
+        "selectable": true
+      }
+    ]
+  }
+]

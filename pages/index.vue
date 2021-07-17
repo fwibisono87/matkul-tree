@@ -10,9 +10,9 @@
       </v-card></v-col>
       <v-col>
         <v-card color='#8B0000'>
-        <v-list-item>
+        <v-list-item to='/si'>
           <v-list-item-icon><v-icon>mdi-clipboard-text-search-outline</v-icon></v-list-item-icon>
-          <v-list-item-title>Sistem Informasi (Unimplemented)</v-list-item-title>
+          <v-list-item-title>Sistem Informasi (Partial Impl.)</v-list-item-title>
         </v-list-item>
       </v-card></v-col>
     </v-row>
