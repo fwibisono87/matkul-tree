@@ -32,10 +32,20 @@
           max-width='50%'
         >
           <v-card
+            v-if='matkul.selectable || dependencyDriver(matkul.dependency)===true'
             :color="matkul.selected==true ? '#006400' : matkul.selectable || dependencyDriver(matkul.dependency)===true ? '#F96b00': '#1e1e1e'"
             height='100%'
             min-height='300px'
             @click='matkul.selected = !matkul.selected'
+          >
+            <v-card-title>{{matkul.stitle}}</v-card-title>
+            <v-card-subtitle>{{matkul.ltitle}}</v-card-subtitle>
+            <v-card-text>{{matkul.description}}</v-card-text>
+          </v-card>
+          <v-card
+            v-else
+            height='100%'
+            min-height='300px'
           >
             <v-card-title>{{matkul.stitle}}</v-card-title>
             <v-card-subtitle>{{matkul.ltitle}}</v-card-subtitle>
