@@ -15,7 +15,7 @@
           </v-col>
           <v-col cols='4'>
             <!--suppress HtmlDeprecatedAttribute -->
-            <v-card color='#F96b00' min-height='100%' align='center'>Bisa diambil</v-card>
+            <v-card color='#d46b08' min-height='100%' align='center'>Bisa diambil</v-card>
           </v-col>
         </v-row>
       </v-container>
@@ -34,14 +34,14 @@
         >
           <v-card
             v-if='matkul.selectable || dependencyDriver(matkul.dependency)===true'
-            :color="matkul.selected==true ? '#006400' : matkul.selectable || dependencyDriver(matkul.dependency)===true ? '#F96b00': '#1e1e1e'"
+            :color="matkul.selected==true ? '#006400' : matkul.selectable || dependencyDriver(matkul.dependency)===true ? '#d46b08' : '#1e1e1e'"
             height='100%'
-            min-height='300px'
+            min-height='150px'
             @click='matkul.selected = !matkul.selected'
           >
-            <v-card-title>{{matkul.stitle}}</v-card-title>
-            <v-card-subtitle>{{matkul.ltitle}}</v-card-subtitle>
-            <v-card-text>{{matkul.description}}</v-card-text>
+            <v-card-title style='font-weight: bold'>{{matkul.stitle}}</v-card-title>
+            <v-card-subtitle style='color: white'>{{matkul.ltitle}}</v-card-subtitle>
+            <v-card-text style='color: white'>{{matkul.description}}</v-card-text>
           </v-card>
           <v-card
             v-else
