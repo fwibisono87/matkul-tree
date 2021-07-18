@@ -39,18 +39,30 @@
             min-height='150px'
             @click='matkul.selected = !matkul.selected'
           >
-            <v-card-title style='font-weight: bold'>{{matkul.stitle}}</v-card-title>
-            <v-card-subtitle style='color: white'>{{matkul.ltitle}}</v-card-subtitle>
-            <v-card-text style='color: white'>{{matkul.description}}</v-card-text>
+            <v-card-title>{{matkul.stitle}}</v-card-title>
+            <v-card-subtitle>{{matkul.ltitle}}</v-card-subtitle>
+            <v-card-text>
+              {{matkul.description}} <br />
+            </v-card-text>
+            <v-card-subtitle v-if='joinDependency(matkul.dependency) !== ""'>
+              <span>Prerekuisit:</span>
+              {{joinDependency(matkul.dependency)}}
+            </v-card-subtitle>
           </v-card>
           <v-card
             v-else
             height='100%'
-            min-height='300px'
+            min-height='150px'
           >
             <v-card-title>{{matkul.stitle}}</v-card-title>
             <v-card-subtitle>{{matkul.ltitle}}</v-card-subtitle>
-            <v-card-text>{{matkul.description}}</v-card-text>
+            <v-card-text>
+              {{matkul.description}} <br />
+            </v-card-text>
+            <v-card-subtitle v-if='joinDependency(matkul.dependency) !== ""'>
+              <span>Prerekuisit:</span>
+              {{joinDependency(matkul.dependency)}}
+            </v-card-subtitle>
           </v-card>
         </v-col>
       </v-row>
@@ -69,6 +81,9 @@ export default {
     // await console.log(this.dependencyDriver(['MatDas 1', 'MatDas 2']))
   },
   methods: {
+    joinDependency(dependencyList){
+      return dependencyList.join(', ')
+    },
     dependencyDriver(dependencyList){
       // console.log("checking!")
       if(dependencyList===[]){

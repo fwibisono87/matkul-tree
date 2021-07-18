@@ -199,52 +199,52 @@
     "name": "Semester 5",
     "matkuls": [
       {
-        "stitle": "Agama",
-        "ltitle": "MPK Agama",
-        "description": "Mata Kuliah Agama",
-        "dependency": [],
+        "stitle": "AIDS",
+        "ltitle": "Kecerdasan Artifisial dan Sains Data Dasar",
+        "description": "Mata kuliah ini memperkenalkan konsep dasar\nkecerdasan buatan (arficial intelligence) serta\nberbagai pendekatan dan teknik untuk\nmemecahkan permasalahan di bidang kecerdasan\nbuatan.",
+        "dependency": ["StatProb", "BasDat", "SDA", "MD-1"],
         "selected": false,
-        "selectable": true
+        "selectable": false
       },
       {
-        "stitle": "Kalkulus 1",
-        "ltitle": "Kalkulus 1",
-        "description": "Matemaka Dasar 1 merupakan mata ajaran wajib di Fasilkom dengan materi utama Kalkulus Dasar.",
-        "dependency": [],
+        "stitle": "APAP",
+        "ltitle": "Arsitektur dan Pemrograman Aplikasi Perusahaan",
+        "description": "Kuliah ini memperkenalkan teknologi\npengembangan aplikasi enterprise terkini.\nDimulai dari konsep pengembangan aplikasi,\nframework pengembangan terbaru,\npenggunaan database dan studi kasus yang\ndituangkan dalam tugas proyek berkelompok.",
+        "dependency": ["PBP", "BasDat", "SDA"],
         "selected": false,
-        "selectable": true
+        "selectable": false
       },
       {
-        "stitle": "Inggris",
-        "ltitle": "MPK Bahasa Inggris",
-        "description": "Mata Pelajaran Bahasa Inggris",
-        "dependency": [],
+        "stitle": "StatTer",
+        "ltitle": "Statistika Terapan",
+        "description": "Salah satu kompetensi yang harus dimiliki oleh\npraksi di bidang sistem informasi adalah\nkemampuan untuk mengolah dan menganalisis\ndata. ",
+        "dependency": ["StatProb"],
         "selected": false,
-        "selectable": true
+        "selectable": false
       },
       {
-        "stitle": "MPKO/S",
-        "ltitle": "MPK Olahraga/Seni",
-        "description": "Mata kuliah yang bisa dipilih!",
-        "dependency": [],
+        "stitle": "Anaperancis",
+        "ltitle": "Analisis dan Perancangan Sistem Informasi",
+        "description": "Mata kuliah ini berfokus pada Analisis dan\nPerancangan Sistem Informasi (APSI). APSI\nmelibatkan pemahaman terkait kebutuhan\ninformasi oleh pengguna dan bagaimana\nkebutuhan tersebut dapat digunakan untuk\nmerancang Sistem Informasi (SI) untuk mencapai\ntujuan organisasi. ",
+        "dependency": ["BasDat", "PPSI"],
         "selected": false,
-        "selectable": true
+        "selectable": false
       },
       {
-        "stitle": "MD-1",
-        "ltitle": "Matematika Diskret 1",
-        "description": "Mata ajar ini berisi subyek Matemaka Diskret\nyang memuat fondasi teoris untuk mendukung\nstudi lanjutan di bidang ilmu komputer, dan\nmemuat aplikasi matemaka diskret di bidang\nilmu komputer\n",
-        "dependency": [],
+        "stitle": "MSI",
+        "ltitle": "Manajemen Sistem Informasi",
+        "description": "[MIN 100SKS] Mata kuliah ini mengajarkan mahasiswa terkait\naspek dan pengetahuan mengelola sistem\ninformasi dalam suatu organisasi bisnis, baik\ndari aspek strategis maupun teknis.",
+        "dependency": ["PPSI"],
         "selected": false,
-        "selectable": true
+        "selectable": false
       },
       {
-        "stitle": "DDP-1",
-        "ltitle": "Dasar Dasar Pemrograman 1",
-        "description": "Mata kuliah ini bertujuan untuk mengajarkan\nkonsep-konsep dasar serta teknik untuk membuat\nprogram komputer menggunakan Bahasa\nPemrograman Phyton.",
-        "dependency": [],
+        "stitle": "JarKomDat",
+        "ltitle": "Jaringan Komunikasi Data",
+        "description": "Mata kuliah ini memperkenalkan model referensi\nISO/OSI dan TCP/IP untuk menganalisis,\nmerancang, mengimplementasikan, dan mengelola\njaringan komunikasi data",
+        "dependency": ["DDP-1", "SOSI"],
         "selected": false,
-        "selectable": true
+        "selectable": false
       }
     ]
   },
@@ -267,7 +267,7 @@
       {
         "stitle": "KomMas",
         "ltitle": "Komputer dan Masyarakat",
-        "description": "Mata kuliah ini menimbulkan kesadaran dan\nkepekaan mahasiswa terhadap berbagai persoalan\neka, sosial, dan ekonomi terkait penerapan\nteknologi komputer dalam kehidupan sehari-hari.\nMahasiswa diharapkan mampu merespon posif\nterhadap masalah-masalah sosial yang ada dalam\nkonteks disiplin ilmu komputer. [MIN 100SKS]",
+        "description": "[MIN 100SKS] Mata kuliah ini menimbulkan kesadaran dan\nkepekaan mahasiswa terhadap berbagai persoalan\neka, sosial, dan ekonomi terkait penerapan\nteknologi komputer dalam kehidupan sehari-hari.\nMahasiswa diharapkan mampu merespon posif\nterhadap masalah-masalah sosial yang ada dalam\nkonteks disiplin ilmu komputer.",
         "dependency": [],
         "selected": false,
         "selectable": true

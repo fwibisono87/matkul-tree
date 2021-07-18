@@ -225,6 +225,7 @@
         "ltitle": "Analisis Numerik",
         "description": "Mata kuliah ini membahas dasar-dasar penerapan\nkomputasi ilmiah untuk ilmu komputer",
         "dependency": ["Alin", "Kalkulus 2"],
+        "dependency": ["Alin", "Kalkulus 2"],
         "selected": false,
         "selectable": false
       },
@@ -267,7 +268,7 @@
       {
         "stitle": "KomMas",
         "ltitle": "Komputer dan Masyarakat",
-        "description": "Mata kuliah ini menimbulkan kesadaran dan\nkepekaan mahasiswa terhadap berbagai persoalan\neka, sosial, dan ekonomi terkait penerapan\nteknologi komputer dalam kehidupan sehari-hari.\nMahasiswa diharapkan mampu merespon posif\nterhadap masalah-masalah sosial yang ada dalam\nkonteks disiplin ilmu komputer. [MIN 100SKS]",
+        "description": "[MIN 100SKS] Mata kuliah ini menimbulkan kesadaran dan\nkepekaan mahasiswa terhadap berbagai persoalan\neka, sosial, dan ekonomi terkait penerapan\nteknologi komputer dalam kehidupan sehari-hari.\nMahasiswa diharapkan mampu merespon posif\nterhadap masalah-masalah sosial yang ada dalam\nkonteks disiplin ilmu komputer.",
         "dependency": [],
         "selected": false,
         "selectable": true
