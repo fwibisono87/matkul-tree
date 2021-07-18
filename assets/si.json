@@ -181,12 +181,12 @@
         "stitle": "SIPA",
         "ltitle": "Sistem Informasi Perusahaan dan Akuntansi",
         "description": "[TEMP: Mata kuliah gabungan dari Sistem-Sistem\nPerusahaan dan Sistem Informasi Akuntansi dan\nKeuangan]",
-        "dependency": ["AdBis"],
+        "dependency": ["ManBis"],
         "selected": false,
         "selectable": false
       },
       {
-        "stitle": "MPTI",
+        "stitle": "ManPro TI",
         "ltitle": "Manajemen Proyek Teknologi Informasi",
         "description": "Mata ajar ini berisi subyek Matemaka Diskret\nyang memuat fondasi teoris untuk mendukung\nstudi lanjutan di bidang ilmu komputer, dan\nmemuat aplikasi matemaka diskret di bidang\nilmu komputer\n",
         "dependency": ["PPSI", "ManBis"],
@@ -215,7 +215,7 @@
         "selectable": false
       },
       {
-        "stitle": "StatTer",
+        "stitle": "StaTer",
         "ltitle": "Statistika Terapan",
         "description": "Salah satu kompetensi yang harus dimiliki oleh\npraksi di bidang sistem informasi adalah\nkemampuan untuk mengolah dan menganalisis\ndata. ",
         "dependency": ["StatProb"],
@@ -252,7 +252,7 @@
     "name": "Semester 6",
     "matkuls": [
       {
-        "stitle": "PBSI",
+        "stitle": "Propensi",
         "ltitle": "Proyek Pengembangan Sistem Informasi",
         "description": "Mata kuliah ini mengajarkan mahasiswa terkait\npengembangan suatu proyek sistem informasi.",
         "dependency": ["SisTer", "AnaPerancis", "MPTI", "APAP"],
