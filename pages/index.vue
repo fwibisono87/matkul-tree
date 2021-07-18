@@ -1,6 +1,7 @@
 <template>
   <v-container>
-    <span>Halo! Selamat datang di Pacil Matkul Tree!</span>
+    <h2>Halo! Selamat datang di Pacil Matkul Tree!</h2>
+    <h1>Silahkan pilih Program Studi anda!</h1>
     <v-row>
       <v-col><v-card color='#00008B'>
         <v-list-item to='/ilkom'>

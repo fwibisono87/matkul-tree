@@ -280,7 +280,7 @@
       {
         "stitle": "TA",
         "ltitle": "Tugas Akhir",
-        "description": "Mata kuliah ini melah kemampuan mahasiswa\nuntuk mengembangkan bidang ilmu/teknologi atau\nmelanjutkan studinya. [MIN 114 SKS]",
+        "description": "[MIN 114 SKS] Mata kuliah ini melah kemampuan mahasiswa\nuntuk mengembangkan bidang ilmu/teknologi atau\nmelanjutkan studinya. ",
         "dependency": ["MPPI"],
         "selected": false,
         "selectable": false

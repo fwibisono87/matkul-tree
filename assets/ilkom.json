@@ -225,7 +225,6 @@
         "ltitle": "Analisis Numerik",
         "description": "Mata kuliah ini membahas dasar-dasar penerapan\nkomputasi ilmiah untuk ilmu komputer",
         "dependency": ["Alin", "Kalkulus 2"],
-        "dependency": ["Alin", "Kalkulus 2"],
         "selected": false,
         "selectable": false
       },
@@ -281,7 +280,7 @@
       {
         "stitle": "TA",
         "ltitle": "Tugas Akhir",
-        "description": "Mata kuliah ini melah kemampuan mahasiswa\nuntuk mengembangkan bidang ilmu/teknologi atau\nmelanjutkan studinya. [MIN 114 SKS]",
+        "description": "[MIN 114 SKS] Mata kuliah ini melah kemampuan mahasiswa\nuntuk mengembangkan bidang ilmu/teknologi atau\nmelanjutkan studinya.",
         "dependency": ["MPPI"],
         "selected": false,
         "selectable": false

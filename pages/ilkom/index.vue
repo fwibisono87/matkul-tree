@@ -3,6 +3,7 @@
     <h1>Ilmu Komputer</h1>
     <div>
       <v-container>
+        <span>Tekan card mata kuliah untuk menandai sebagai 'sudah diambil!'</span>
         <v-row dense>
           <v-col cols='4'>
             <!--suppress HtmlDeprecatedAttribute -->
@@ -33,7 +34,7 @@
         >
           <v-card
             v-if='matkul.selectable || dependencyDriver(matkul.dependency)===true'
-            :color="matkul.selected==true ? '#006400' : matkul.selectable || dependencyDriver(matkul.dependency)===true ? '#d46b08' : '#1e1e1e'"
+            :color="matkul.selected===true ? '#006400' : matkul.selectable || dependencyDriver(matkul.dependency)===true ? '#d46b08' : '#1e1e1e'"
             height='100%'
             min-height='150px'
             @click='matkul.selected = !matkul.selected'
