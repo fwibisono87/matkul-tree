@@ -5,6 +5,202 @@
       {
         "stitle": "Agama",
         "ltitle": "MPK Agama",
+        "description": "Mata Kuliah Agama.",
+        "dependency": [],
+        "selected": false,
+        "selectable": true
+      },
+      {
+        "stitle": "Kalkulus 1",
+        "ltitle": "Kalkulus 1",
+        "description": "Matemaka Dasar 1 merupakan mata ajaran wajib di Fasilkom dengan materi utama Kalkulus Dasar.",
+        "dependency": [],
+        "selected": false,
+        "selectable": true
+      },
+      {
+        "stitle": "Inggris",
+        "ltitle": "MPK Bahasa Inggris",
+        "description": "Mata Pelajaran Bahasa Inggris.",
+        "dependency": [],
+        "selected": false,
+        "selectable": true
+      },
+      {
+        "stitle": "MD-1",
+        "ltitle": "Matematika Diskret 1",
+        "description": "Mata ajar ini berisi subyek Matemaka Diskret\nyang memuat fondasi teoris untuk mendukung\nstudi lanjutan di bidang ilmu komputer, dan\nmemuat aplikasi matemaka diskret di bidang\nilmu komputer\n",
+        "dependency": [],
+        "selected": false,
+        "selectable": true
+      },
+      {
+        "stitle": "DDP-1",
+        "ltitle": "Dasar-Dasar Pemrograman 1",
+        "description": "Mata kuliah ini bertujuan untuk mengajarkan\nkonsep-konsep dasar serta teknik untuk membuat\nprogram komputer menggunakan Bahasa\nPemrograman Phyton.",
+        "dependency": [],
+        "selected": false,
+        "selectable": true
+      },
+      {
+        "stitle": "ManBis",
+        "ltitle": "Manajemen Bisnis",
+        "description": "[TEMP: Mata kuliah ini merupakah gabungan dari Administrasi Bisnis dan Prinsip-Prinsip Manajemen]",
+        "dependency": [],
+        "selected": false,
+        "selectable": true
+      },
+      {
+        "stitle": "KomBisTek",
+        "ltitle": "Komunikasi Bisnis dan Teknis",
+        "description": "Mata kuliah ini berfokus pada strategi dan\nketerampilan untuk menulis dan berbicara yang\nefektif dalam organisasi bisnis.",
+        "dependency": [],
+        "selected": false,
+        "selectable": true
+      }
+    ]
+  },
+  {
+    "name": "Semester 2",
+    "matkuls": [
+      {
+        "stitle": "MPKT",
+        "ltitle": "MPKT",
+        "description": "Mata Kuliah Pengembangan Kepribadian Terpadu.",
+        "dependency": [],
+        "selected": false,
+        "selectable": true
+      },
+      {
+        "stitle": "DDP-2",
+        "ltitle": "Dasar-Dasar Pemrograman 2",
+        "description": "Mata kuliah ini merupakan lanjutan dari\nDasar-Dasar Pemrograman 1, yang berfokus\npada paradigma pengembangan perangkat\nlunak skala medium, terutama dengan\nparadigma pemrograman berorientasi obyek.\nBahasa pemrograman yang digunakan adalah\nJava.",
+        "dependency": ["DDP-1"],
+        "selected": false,
+        "selectable": false
+      },
+      {
+        "stitle": "MD-2",
+        "ltitle": "Matematika Diskret 2",
+        "description": "Mata kuliah ini merupakan kelanjutan dari mata\nkuliah Matemaka Diskret 1 dan memberikan\nlandasan teoris untuk ilmu komputer.\n",
+        "dependency": [],
+        "selected": false,
+        "selectable": true
+      },
+      {
+        "stitle": "PPSI",
+        "ltitle": "Prinsip-prinsip Sistem Informasi",
+        "description": "Mata kuliah ini mengajarkan mahasiswa terkait\naspek dan pengetahuan dasar serta prinsip-\nprinsip sistem informasi.",
+        "dependency": [],
+        "selected": false,
+        "selectable": true
+      },
+      {
+        "stitle": "DDAK",
+        "ltitle": "Dasar-Dasar Arsitektur Komputer",
+        "description": "Melalui kuliah ini mahasiswa/i diharapkan dapat\nmengerti komponen dasar dari suatu sistem\nkomputer dan bagaimana komponen-komponen ini\nbekerja sama untuk menghasilkan fungsi yang\ndiinginkan oleh pemakai komputer.",
+        "dependency": [],
+        "selected": false,
+        "selectable": true
+      }
+    ]
+  },
+  {
+    "name": "Semester 3",
+    "matkuls": [
+      {
+        "stitle": "PBP",
+        "ltitle": "Pemrograman Berbasis Platform",
+        "description": "[TEMP: Pengganti Pemrograman dan Perancangan Web]",
+        "dependency": ["DDP-1"],
+        "selected": false,
+        "selectable": false
+      },
+      {
+        "stitle": "SDA",
+        "ltitle": "Struktur Data dan Algoritma",
+        "description": "Mata kuliah ini mengajarkan teknik dasar untuk\nmengabstraksikan data, membuat algoritma yang\ndapat mengakses data tersebut, dan memanipulasi\nstruktur abstrak tersebut",
+        "dependency": ["DDP-2"],
+        "selected": false,
+        "selectable": false
+      },
+      {
+        "stitle": "MPPI",
+        "ltitle": "Metodologi Penelitian dan Penulisan Ilmiah",
+        "description": "Mata kuliah ini berfokus pada metodologi\npenelian untuk Sistem Informasi (SI) dan\nteknologi informasi (TI). mata kuliah ini\nmemberikan landasan sikap mahasiswa agar\nbisa berfikir secara ilmiah",
+        "dependency": ["MPKT"],
+        "selected": false,
+        "selectable": false
+      },
+      {
+        "stitle": "SOSI",
+        "ltitle": "Sistem Operasi untuk Sistem Informasi",
+        "description": "[TEMP: Mata kuliah OS untuk mahasiswa\njurusan Sistem Informasi]",
+        "dependency": [],
+        "selected": false,
+        "selectable": true
+      },
+      {
+        "stitle": "Alin",
+        "ltitle": "Aljabar Linier",
+        "description": "Aljabar linier memberikan mahasiswa\nketerampilan untuk memecahkan masalah yang\nterkait dengan vektor dan matriks aljabar dan\nuntuk meningkatkan penalaran matemaka\n(kejelasan, konsistensi, dan logika).",
+        "dependency": ["Kalkulus 1"],
+        "selected": false,
+        "selectable": false
+      }
+    ]
+  },
+  {
+    "name": "Semester 4",
+    "matkuls": [
+      {
+        "stitle": "StatProb",
+        "ltitle": "Statistika dan Probabilitas",
+        "description": "Melalui mata kuliah ini mahasiswa dilatih agar\nmampu menerapkan konsep-konsep probabilitas\ndan stask untuk menginterpretasikan data",
+        "dependency": ["Kalkulus 1", "MD-1"],
+        "selected": false,
+        "selectable": false
+      },
+      {
+        "stitle": "SisTer",
+        "ltitle": "Sistem Interaksi",
+        "description": "Mata kuliah akan membekali mahasiswa dengan\npengetahuan mengenai perancangan antarmuka\nuntuk perangkat lunak",
+        "dependency": ["PBP"],
+        "selected": false,
+        "selectable": false
+      },
+      {
+        "stitle": "BasDat",
+        "ltitle": "Basis Data",
+        "description": "Mata kuliah ini membahas konsep dasar dari\nmanajemen database yang mencakup aspek\npemodelan dan desain, bahasa dan fasilitas,\nimplementasi dan penggunaan database.",
+        "dependency": ["DDP-2"],
+        "selected": false,
+        "selectable": false
+      },
+      {
+        "stitle": "SIPA",
+        "ltitle": "Sistem Informasi Perusahaan dan Akuntansi",
+        "description": "[TEMP: Mata kuliah gabungan dari Sistem-Sistem\nPerusahaan dan Sistem Informasi Akuntansi dan\nKeuangan]",
+        "dependency": ["AdBis"],
+        "selected": false,
+        "selectable": false
+      },
+      {
+        "stitle": "MPTI",
+        "ltitle": "Manajemen Proyek Teknologi Informasi",
+        "description": "Mata ajar ini berisi subyek Matemaka Diskret\nyang memuat fondasi teoris untuk mendukung\nstudi lanjutan di bidang ilmu komputer, dan\nmemuat aplikasi matemaka diskret di bidang\nilmu komputer\n",
+        "dependency": ["PPSI", "ManBis"],
+        "selected": false,
+        "selectable": false
+      }
+    ]
+  },
+  {
+    "name": "Semester 5",
+    "matkuls": [
+      {
+        "stitle": "Agama",
+        "ltitle": "MPK Agama",
         "description": "Mata Kuliah Agama",
         "dependency": [],
         "selected": false,
@@ -49,6 +245,45 @@
         "dependency": [],
         "selected": false,
         "selectable": true
+      }
+    ]
+  },
+  {
+    "name": "Semester 6",
+    "matkuls": [
+      {
+        "stitle": "PBSI",
+        "ltitle": "Proyek Pengembangan Sistem Informasi",
+        "description": "Mata kuliah ini mengajarkan mahasiswa terkait\npengembangan suatu proyek sistem informasi.",
+        "dependency": ["SisTer", "AnaPerancis", "MPTI", "APAP"],
+        "selected": false,
+        "selectable": false
+      }
+    ]
+  },
+  {
+    "name": "Semester 7",
+    "matkuls": [
+      {
+        "stitle": "KomMas",
+        "ltitle": "Komputer dan Masyarakat",
+        "description": "Mata kuliah ini menimbulkan kesadaran dan\nkepekaan mahasiswa terhadap berbagai persoalan\neka, sosial, dan ekonomi terkait penerapan\nteknologi komputer dalam kehidupan sehari-hari.\nMahasiswa diharapkan mampu merespon posif\nterhadap masalah-masalah sosial yang ada dalam\nkonteks disiplin ilmu komputer. [MIN 100SKS]",
+        "dependency": [],
+        "selected": false,
+        "selectable": true
+      }
+    ]
+  },
+  {
+    "name": "Semester 8",
+    "matkuls": [
+      {
+        "stitle": "TA",
+        "ltitle": "Tugas Akhir",
+        "description": "Mata kuliah ini melah kemampuan mahasiswa\nuntuk mengembangkan bidang ilmu/teknologi atau\nmelanjutkan studinya. [MIN 114 SKS]",
+        "dependency": ["MPPI"],
+        "selected": false,
+        "selectable": false
       }
     ]
   }
