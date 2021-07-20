@@ -255,7 +255,7 @@
         "stitle": "Propensi",
         "ltitle": "Proyek Pengembangan Sistem Informasi",
         "description": "Mata kuliah ini mengajarkan mahasiswa terkait\npengembangan suatu proyek sistem informasi.",
-        "dependency": ["SisTer", "AnaPerancis", "ManPro TI", "APAP"],
+        "dependency": ["SisTer", "Anaperancis", "ManPro TI", "APAP"],
         "selected": false,
         "selectable": false
       }
