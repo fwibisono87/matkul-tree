@@ -105,10 +105,18 @@
                     </v-card>
                   </v-dialog>
                   <v-btn
+                    v-if='!matkul.selected'
                     text
                     @click='matkul.selected = !matkul.selected'
                   >
                     Ambil
+                  </v-btn>
+                  <v-btn
+                    v-else
+                    text
+                    @click='matkul.selected = !matkul.selected'
+                  >
+                    Lepas
                   </v-btn>
                 </v-card-actions>
               </v-card>

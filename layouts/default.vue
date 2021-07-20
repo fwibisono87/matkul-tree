@@ -70,6 +70,9 @@
 <script>
 export default {
   name: 'default',
+  css: [
+    '@/assets/css/main.css',
+  ],
   data: () => ({
     loader: true,
     drawer: false
