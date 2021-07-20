@@ -8,6 +8,7 @@
         "description": "Mata Kuliah Agama",
         "dependency": [],
         "selected": false,
+        "details": false,
         "selectable": true
       },
       {
@@ -16,6 +17,7 @@
         "description": "Matemaka Dasar 1 merupakan mata ajaran wajib di Fasilkom dengan materi utama Kalkulus Dasar.",
         "dependency": [],
         "selected": false,
+        "details": false,
         "selectable": true
       },
       {
@@ -24,6 +26,7 @@
         "description": "Mata Pelajaran Bahasa Inggris",
         "dependency": [],
         "selected": false,
+        "details": false,
         "selectable": true
       },
       {
@@ -32,6 +35,7 @@
         "description": "Mata kuliah yang bisa dipilih!",
         "dependency": [],
         "selected": false,
+        "details": false,
         "selectable": true
       },
       {
@@ -40,6 +44,7 @@
         "description": "Mata ajar ini berisi subyek Matemaka Diskret\nyang memuat fondasi teoris untuk mendukung\nstudi lanjutan di bidang ilmu komputer, dan\nmemuat aplikasi matemaka diskret di bidang\nilmu komputer\n",
         "dependency": [],
         "selected": false,
+        "details": false,
         "selectable": true
       },
       {
@@ -48,6 +53,7 @@
         "description": "Mata kuliah ini bertujuan untuk mengajarkan\nkonsep-konsep dasar serta teknik untuk membuat\nprogram komputer menggunakan Bahasa\nPemrograman Phyton.",
         "dependency": [],
         "selected": false,
+        "details": false,
         "selectable": true
       },
       {
@@ -56,6 +62,7 @@
         "description": "Mata kuliah ini memberikan pemahaman dasar\ndan pengalaman praks dalam merancang\nsistem digital yang menjadi dasar sebuah\nkomputer. ",
         "dependency": [],
         "selected": false,
+        "details": false,
         "selectable": true
       }
     ]
@@ -69,6 +76,7 @@
         "description": "-",
         "dependency": [],
         "selected": false,
+        "details": false,
         "selectable": true
       },
       {
@@ -77,6 +85,7 @@
         "description": "Mata kuliah ini merupakan lanjutan dari\nDasar-Dasar Pemrograman 1, yang berfokus\npada paradigma pengembangan perangkat\nlunak skala medium, terutama dengan\nparadigma pemrograman berorientasi obyek.\nBahasa pemrograman yang digunakan adalah\nJava",
         "dependency": ["DDP-1"],
         "selected": false,
+        "details": false,
         "selectable": false
       },
       {
@@ -85,6 +94,7 @@
         "description": "Mata kuliah ini merupakan kelanjutan dari mata\nkuliah Matemaka Diskret 1 dan memberikan\nlandasan teoris untuk ilmu komputer.\n",
         "dependency": [],
         "selected": false,
+        "details": false,
         "selectable": true
       },
       {
@@ -95,6 +105,7 @@
           "PSD"
         ],
         "selected": false,
+        "details": false,
         "selectable": false
       },
       {
@@ -103,6 +114,7 @@
         "description": "Mata kuliah ini mengajarkan topik-topik lanjut dari\nKalkulus sebagai berikut: aplikasi integral, bentuk\ntak tentu dan integral tak wajar, barisan dan deret\ntak hingga, geometri dalam ruang dan vektor,\nfungsi peubah banyak, integral lipat",
         "dependency": ["Kalkulus 1"],
         "selected": false,
+        "details": false,
         "selectable": false
       }
     ]
@@ -116,6 +128,7 @@
         "description": "[TEMP: Pengganti Pemrograman dan Perancangan Web]",
         "dependency": ["DDP-1"],
         "selected": false,
+        "details": false,
         "selectable": false
       },
       {
@@ -124,6 +137,7 @@
         "description": "Mata kuliah ini mengajarkan teknik dasar untuk\nmengabstraksikan data, membuat algoritma yang\ndapat mengakses data tersebut, dan memanipulasi\nstruktur abstrak tersebut",
         "dependency": ["DDP-2"],
         "selected": false,
+        "details": false,
         "selectable": false
       },
       {
@@ -132,6 +146,7 @@
         "description": "Mata kuliah ini berfokus pada metodologi\npenelian untuk Sistem Informasi (SI) dan\nteknologi informasi (TI). mata kuliah ini\nmemberikan landasan sikap mahasiswa agar\nbisa berfikir secara ilmiah",
         "dependency": ["MPKT"],
         "selected": false,
+        "details": false,
         "selectable": false
       },
       {
@@ -142,6 +157,7 @@
           "POK"
         ],
         "selected": false,
+        "details": false,
         "selectable": false
       },
       {
@@ -150,6 +166,7 @@
         "description": "Aljabar linier memberikan mahasiswa\nketerampilan untuk memecahkan masalah yang\nterkait dengan vektor dan matriks aljabar dan\nuntuk meningkatkan penalaran matemaka\n(kejelasan, konsistensi, dan logika).",
         "dependency": ["Kalkulus 1"],
         "selected": false,
+        "details": false,
         "selectable": false
       }
     ]
@@ -163,6 +180,7 @@
         "description": "Melalui mata kuliah ini mahasiswa dilah agar\nmampu menerapkan konsep-konsep probabilitas\ndan stask untuk menginterpretasikan data",
         "dependency": ["Kalkulus 1", "MD-1"],
         "selected": false,
+        "details": false,
         "selectable": false
       },
       {
@@ -171,6 +189,7 @@
         "description": "Mata kuliah akan membekali mahasiswa dengan\npengetahuan mengenai perancangan antarmuka\nuntuk perangkat lunak",
         "dependency": ["PBP"],
         "selected": false,
+        "details": false,
         "selectable": false
       },
       {
@@ -179,6 +198,7 @@
         "description": "Mata kuliah ini membahas topik lanjut\npemrograman khususnya pemrograman skala\nbesar yang menggunakan berbagai alat bantu\nmaupun memanfaatkan library atau source\ncode yang sudah dibuat sebelumnya",
         "dependency": ["DDP-2", "PBP"],
         "selected": false,
+        "details": false,
         "selectable": false
       },
       {
@@ -189,6 +209,7 @@
           "MD-1", "MD-2"
         ],
         "selected": false,
+        "details": false,
         "selectable": false
       },
       {
@@ -197,6 +218,7 @@
         "description": "Mata kuliah ini membahas konsep dasar dari\nmanajemen database yang mencakup aspek\npemodelan dan desain, bahasa dan fasilitas,\nimplementasi dan penggunaan database.",
         "dependency": ["DDP-2"],
         "selected": false,
+        "details": false,
         "selectable": false
       }
     ]
@@ -210,6 +232,7 @@
         "description": "Mata kuliah ini memperkenalkan jaringan\nkomputer, dan membekali peserta dengan\npemahaman terhadap aplikasi-aplikasi jaringan\nkomputer serta bagaimana cara kerjanya pada\nlapisan-lapisan bawah",
         "dependency": ["OS", "DDP-1"],
         "selected": false,
+        "details": false,
         "selectable": false
       },
       {
@@ -218,6 +241,7 @@
         "description": "Mata kuliah ini memperkenalkan konsep dasar\nkecerdasan buatan (arficial intelligence) serta\nberbagai pendekatan dan teknik untuk\nmemecahkan permasalahan di bidang kecerdasan\nbuatan.",
         "dependency": ["StatProb", "BasDat", "SDA", "MD-1"],
         "selected": false,
+        "details": false,
         "selectable": false
       },
       {
@@ -226,6 +250,7 @@
         "description": "Mata kuliah ini membahas dasar-dasar penerapan\nkomputasi ilmiah untuk ilmu komputer",
         "dependency": ["Alin", "Kalkulus 2"],
         "selected": false,
+        "details": false,
         "selectable": false
       },
       {
@@ -236,6 +261,7 @@
           "SDA"
         ],
         "selected": false,
+        "details": false,
         "selectable": false
       },
       {
@@ -244,6 +270,7 @@
         "description": "Mata kuliah ini mencakup siklus pengembangan\nperangkat lunak, yang terdiri dari perencanaan,\nanalisis, desain, coding, pengujian dan\npemeliharaan.",
         "dependency": ["DDP-2"],
         "selected": false,
+        "details": false,
         "selectable": false
       }
     ]
@@ -257,6 +284,7 @@
         "description": "Mata Kuliah ini memberikan pengalaman,\nketrampilan dan pengetahuan pengembangan\nperangkat lunak dari awal hingga fase deployment\ndan bisa digunakan oleh pengguna, sebagai satu\nkesatuan kerja m dengan menggunakan alat\nbantu pengembangan dan teknologi maupun\nmetodologi terkini.",
         "dependency": ["RPL", "BasDat"],
         "selected": false,
+        "details": false,
         "selectable": false
       }
     ]
@@ -270,6 +298,7 @@
         "description": "[MIN 100SKS] Mata kuliah ini menimbulkan kesadaran dan\nkepekaan mahasiswa terhadap berbagai persoalan\neka, sosial, dan ekonomi terkait penerapan\nteknologi komputer dalam kehidupan sehari-hari.\nMahasiswa diharapkan mampu merespon posif\nterhadap masalah-masalah sosial yang ada dalam\nkonteks disiplin ilmu komputer.",
         "dependency": [],
         "selected": false,
+        "details": false,
         "selectable": true
       }
     ]
@@ -283,6 +312,7 @@
         "description": "[MIN 114 SKS] Mata kuliah ini melah kemampuan mahasiswa\nuntuk mengembangkan bidang ilmu/teknologi atau\nmelanjutkan studinya.",
         "dependency": ["MPPI"],
         "selected": false,
+        "details": false,
         "selectable": false
       }
     ]

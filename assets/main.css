@@ -3,3 +3,9 @@
   border-radius: 10px !important;
   text-align: center;
 }
+.v-card--reveal{
+  bottom: 0;
+  opacity: 1 !important;
+  position: absolute;
+  width: 100%;
+}
