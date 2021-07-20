@@ -1,24 +1,40 @@
 <template>
   <div>
-    <h1>Ilmu Komputer</h1>
-    <div>
-      <v-container>
-        <v-row dense>
-          <v-col cols='4'>
-            <!--suppress HtmlDeprecatedAttribute -->
-            <v-card color='#1e1e1e' min-height='100%' align='center'>Belum bisa diambil</v-card>
-          </v-col>
-          <v-col cols='4'>
-            <!--suppress HtmlDeprecatedAttribute -->
-            <v-card color='#006400' min-height='100%' align='center'>Sudah diambil</v-card>
-          </v-col>
-          <v-col cols='4'>
-            <!--suppress HtmlDeprecatedAttribute -->
-            <v-card color='#d46b08' min-height='100%' align='center'>Bisa diambil</v-card>
-          </v-col>
-        </v-row>
-      </v-container>
-    </div>
+    <v-container>
+      <v-row dense>
+        <v-col>
+          <h1>Ilmu Komputer</h1>
+        </v-col>
+        <v-col>
+          <v-row dense>
+            <v-col>
+              <v-list-item dense>
+                <v-list-item-icon>
+                  <v-icon color='#1e1e1e'>mdi-circle</v-icon>
+                </v-list-item-icon>
+                <v-list-item-subtitle>Belum Bisa Diambil</v-list-item-subtitle>
+              </v-list-item>
+            </v-col>
+            <v-col>
+              <v-list-item dense>
+                <v-list-item-icon>
+                  <v-icon color='#006400'>mdi-circle</v-icon>
+                </v-list-item-icon>
+                <v-list-item-subtitle>Sudah Diambil</v-list-item-subtitle>
+              </v-list-item>
+            </v-col>
+            <v-col>
+              <v-list-item dense>
+                <v-list-item-icon>
+                  <v-icon color='#d46b08'>mdi-circle</v-icon>
+                </v-list-item-icon>
+                <v-list-item-subtitle>Bisa Diambil</v-list-item-subtitle>
+              </v-list-item>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+    </v-container>
     <v-expansion-panels multiple>
       <v-expansion-panel
         v-for='semester in data1'
