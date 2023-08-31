@@ -1,5 +1,8 @@
 # matkul-tree
 
+> [!WARNING]  
+> The information on this repository is deprecated. A new version is on development, please wait!.
+
 ## Welcome to Matkul Tree for CSUI!
 
 ## Build Setup
