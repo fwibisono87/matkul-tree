@@ -1,6 +1,7 @@
 <template>
   <v-container>
     <h2>Halo! Selamat datang di Pacil Matkul Tree!</h2>
+    <h3>WARNING: contents of this page is long deprecated. If you would like to help update data, please email matkul-tree@franciswibisono.com</h3>
     <h3>Silahkan pilih Program Studi anda!</h3>
     <v-row>
       <v-col><v-card color='#00008B'>
